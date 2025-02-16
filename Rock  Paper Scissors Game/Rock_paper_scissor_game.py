@@ -1,5 +1,6 @@
 import random
 
+#get chices from user
 def get_choices():
     player_choice=input("Enter a choice (rock, paper,scieeors): ")
     options=["rock","paper","scissors"]
@@ -7,6 +8,7 @@ def get_choices():
     choices={"player":player_choice,"computer":computer_choice}
     return choices
 
+#check who is win?
 def check_win(player,computer):
     print(f"you chose {player}, computer chose {computer}")
     if player==computer:
